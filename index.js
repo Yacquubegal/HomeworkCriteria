@@ -9,14 +9,14 @@ let MovieObject = function (pTitle, pYear, pGenre, pMan, pWoman, pURL) {
     this.Genre = pGenre;  // action  comedy  drama  horrow scifi  musical  western
     this.Man = pMan;
     this.Woman = pWoman;
-    this.URL = pURL;
+
 }
 
 
-movieArray.push(new MovieObject("Superman Returns", 2006, "Action/Adventure", "Brandon Routh", "Kate Bosworth", "https://www.youtube.com/watch?v=bRqAUqAFhNw"));
-movieArray.push(new MovieObject("Spider-Man", 2002, "Action/Fantasy", "Tobey Maguire", "Kirsten Dunst", "https://www.youtube.com/watch?v=TYMMOjBUPMM"));
-movieArray.push(new MovieObject("Teen Wolf", 1985, "Comedy/Fantasy", "Michael J. Fox", "Susan Ursitti", "https://www.youtube.com/watch?v=6Sao1dXr9qI"));
-movieArray.push(new MovieObject("The Dark Knight", 2008, "Action/Adventure", "Christian Bale", "Maggie Gyllenhaal", "https://www.youtube.com/watch?v=EXeTwQWrcwY"));
+movieArray.push(new MovieObject("Superman Returns", 2006, "Action/Adventure", "Brandon Routh", "Kate Bosworth"));
+movieArray.push(new MovieObject("Spider-Man", 2002, "Action/Fantasy", "Tobey Maguire", "Kirsten Dunst"));
+movieArray.push(new MovieObject("Teen Wolf", 1985, "Comedy/Fantasy", "Michael J. Fox", "Susan Ursitti"));
+movieArray.push(new MovieObject("The Dark Knight", 2008, "Action/Adventure", "Christian Bale", "Maggie Gyllenhaal"));
 console.log(movieArray);
 
 
@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("year").value = "";
         document.getElementById("man").value = "";
         document.getElementById("woman").value = "";
-        document.getElementById("URL").value = "";
     });
 
     $(document).bind("change", "#select-genre", function (event, ui) {
@@ -122,3 +121,4 @@ function dynamicSort(property) {
             return a[property].localeCompare(b[property]);
     }
 }
+
