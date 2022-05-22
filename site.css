@@ -1,0 +1,25 @@
+body {
+  font-family:"Trebuchet MS", Segoe, sans-serif;
+  margin:30px;
+  font-size: 1.2em;
+}
+div:first-child {
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px;
+}
+#box {
+  width: 100px;
+  height: 38px;
+  margin-left: 20px;
+}
+
+.ui-page {
+  background: #74a4c07e !important;
+}
+
+.ui-header {
+  background: #6995b173;
+}
+
