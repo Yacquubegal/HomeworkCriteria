@@ -7,10 +7,11 @@ function formSubmitEvent() {
 	
 	let mov = new movie(title,rating);
 	let good = mov.Validate();
-	let concated = "3g45h24brtgj: "+ title + rating;
-	
+    let concated = "3g45h24brtgj: "+ title + rating;
+	let concated1 = "jgrfd65ht3r: "+ title + rating;
+    let concated2 = "by387dd372f: "+ title + rating;
 	if(good){
-      arr.push(concated);
+      arr.push(concated, concated1, concated2);
     //document.getElementById("display1").innerHTML = mov.ToString();
 	}else{
 		alert("Please fill in the TextBox. Rating must be between 1 and 5.");
